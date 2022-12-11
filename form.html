@@ -50,13 +50,17 @@
     padding-left: 3.8vw;
   }
 
+  .header {
+    font-size: 3rem;
+    width: 85%;
+    margin-top: 10vh;
+    font-weight: 900;
+  }
+
   .foot {
     margin-top: 5vh;
     font-size: 2rem;
-  }
-
-  .header {
-    margin-top: 15vh;
+    font-weight: 600;
   }
 
   .form-group col-md-6 label, .form-group col-md-6 input  {
@@ -85,6 +89,30 @@
     margin-left: 0.8vw;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
+    background-color: rgb(92, 130, 75);
+    border: rgb(92, 130, 75);
+  }
+
+  .link {
+    color: rgb(92, 130, 75);
+  }
+
+  #leaves {
+    position: relative;
+  }
+
+  #odin {
+    width: 5vw;
+    margin-left: 8vw;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 20%;
+    background-color:black;
+    width: 32.55%;
+    font-size: 7rem;
+    font-family: 'Norse Bold'
   }
 
 
@@ -97,6 +125,10 @@
     <div class="leftCont">
       <img id="leaves"
         src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1862&q=80">
+      <div class="overlay">
+        <img id="odin" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+        ODIN
+      </div>
     </div>
 
 
@@ -153,7 +185,7 @@
       </div>
 
       <div class="realFooter">
-        Page built by Ross Hamey - @Endeared on GitHub. Sign up for The Odin Project here.
+        Page built by Ross Hamey - <a class="link" href="https://github.com/Endeared">@Endeared</a> on GitHub. <a class="link" href="https://www.theodinproject.com/">Sign up for The Odin Project here</a>.
       </div>
 
     </div>
