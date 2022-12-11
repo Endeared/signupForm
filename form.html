@@ -12,12 +12,16 @@
 </head>
 
 <style>
+
+  body {
+    font-family: 'Calibri'
+  }
+
   .rightCont {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: 70%;
-    padding-left: 2vw;
   }
 
   #leaves {
@@ -30,6 +34,47 @@
   .main {
     display: flex;
   }
+
+  .rightCont {
+    background-color: rgb(197, 197, 197);
+  }
+
+  #form {
+    margin-top: 5vh;
+    background-color: white;
+    padding-left: 3vw;
+    box-shadow: 0px 5px 5px rgb(156, 156, 156), 0px -5px 5px rgb(156, 156, 156)
+  }
+
+  .header, .foot {
+    padding-left: 3vw;
+  }
+
+  .header {
+    margin-top: 15vh;
+  }
+
+  .form-group col-md-6 label, .form-group col-md-6 input  {
+    width: 50px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .my-1 {
+    padding-left: 0.8vw;
+    font-size: 3rem;
+    padding-bottom: 2vh;
+  }
+
+  .form-group {
+    font-size: 1.5rem;
+  }
+
 
 </style>
 
@@ -47,38 +92,43 @@
 
       <div class="header">
         <div class="topLine">This is not a real online service! I have simply made this landing page as part of The Odin Project's Full Stack JavaScript course.</div>
+        <br>
         <div class="bottomLine">You can sign up for The Odin Project at the bottom of this page!</div>
       </div>
 
       <form id="form">
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Let's do this!</label>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <div class="form-group col-md-4">
+            <label for="input">FIRST NAME</label>
+            <input type="name" class="form-control" id="inputFirstName" placeholder="First Name" required>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <div class="form-group col-md-4">
+            <label for="input">LAST NAME</label>
+            <input type="name" class="form-control" id="inputLastName" placeholder="Last Name" required>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <div class="form-group col-md-4">
+            <label for="input">EMAIL</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" pattern=".+@+." required>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <div class="form-group col-md-4">
+            <label for="input">PHONE NUMBER</label>
+            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" required>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <div class="form-group col-md-4">
+            <label for="input">PASSWORD</label>
+            <input type="password" class="form-control" id="inputPw" placeholder="Password" required>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Your password must be at least 8, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <div class="form-group col-md-4">
+            <label for="input">CONFIRM PASSWORD</label>
+            <input type="password" class="form-control" id="inputPwC" placeholder="Confirm Password" required>
           </div>
         </div>
       </form>
