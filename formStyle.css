@@ -1,0 +1,104 @@
+body {
+    font-family: 'Calibri'
+  }
+
+  .rightCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70%;
+  }
+
+  #leaves {
+    display: inline-block;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .rightCont {
+    background-color: rgb(197, 197, 197);
+  }
+
+  #form {
+    margin-top: 5vh;
+    background-color: white;
+    padding-left: 3vw;
+    box-shadow: 0px 5px 5px rgb(156, 156, 156), 0px -5px 5px rgb(156, 156, 156)
+  }
+
+  .header, .foot, .realFooter {
+    padding-left: 3.8vw;
+  }
+
+  .header {
+    font-size: 3rem;
+    width: 85%;
+    margin-top: 10vh;
+    font-weight: 900;
+  }
+
+  .foot {
+    margin-top: 5vh;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .form-group col-md-6 label, .form-group col-md-6 input  {
+    width: 50px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .my-1 {
+    padding-left: 0.8vw;
+    font-size: 3rem;
+    padding-bottom: 2vh;
+  }
+
+  .form-group {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 15%;
+    margin-left: 0.8vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: rgb(92, 130, 75);
+    border: rgb(92, 130, 75);
+  }
+
+  .link {
+    color: rgb(92, 130, 75);
+  }
+
+  #leaves {
+    position: relative;
+  }
+
+  #odin {
+    width: 5vw;
+    margin-left: 9.5vw;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 16%;
+    background-color:rgba(0, 0, 0, 0.448);
+    color: white;
+    width: 32.55%;
+    font-size: 7rem;
+    font-family: 'Calibri';
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
